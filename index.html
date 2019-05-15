@@ -4,10 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tony Huynh</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
+
+<header>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- <div>
+        <img src="img/logo_transparent.png" alt="logo" class="logo">
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -16,20 +37,35 @@
                 <li><a href="contact.html"><i class="fas fa-id-card"></i> Contact</a></li>
             </ul>
         </nav>
-    </header>
-    
-    <main>
-        <div>
-            <p>Tony Huynh</p>
-        </div>
-    </main>
+    </div> -->
+</header>
 
-    <footer>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/th-b00a00b0/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/t-hnh10" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://twitter.com/t_hnh10" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        </ul>
-    </footer>
+<main>
+    <div>
+        <p>Tony Huynh</p>
+    </div>
+</main>
+
+<footer>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/th-b00a00b0/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/t-hnh10" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/t_hnh10" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+</footer>
+
 </body>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+</script>
+
 </html>
