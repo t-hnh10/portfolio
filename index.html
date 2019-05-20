@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +9,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
 </head>
 
 <body>
 
 <header>
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!-- <div>
-        <img src="img/logo_transparent.png" alt="logo" class="logo">
-        <nav>
-            <ul>
+    <nav role="navigation" class="navbar">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
                 <li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
                 <li><a href="contact.html"><i class="fas fa-id-card"></i> Contact</a></li>
             </ul>
-        </nav>
-    </div> -->
+        </div>
+    </nav>
 </header>
 
 <main>
     <div>
-        <p>Tony Huynh</p>
+        <h1>Tony Huynh</h1>
+        <!-- <h2>Full-Stack Web Developer</h2> -->
     </div>
 </main>
 
@@ -55,17 +47,5 @@
 </footer>
 
 </body>
-
-<script>
-    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-    function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-    }
-</script>
 
 </html>
