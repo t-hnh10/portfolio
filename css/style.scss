@@ -126,12 +126,10 @@ $nav-font-weight: 300;
   transform: none;
 }
 #socialMedia {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
   list-style-type: none;
-  position: absolute;
-  bottom: 155px;
-  a {
-    padding-right: 18px;
-  }
 }
 
 // Background
