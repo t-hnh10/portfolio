@@ -122,10 +122,10 @@
 
 .navbar #menu {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 200px);
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 125px 50px;
   background: #05668d;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -138,7 +138,6 @@
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  height: 100vh;
 }
 
 .navbar #menu li {
@@ -154,6 +153,10 @@
 .navbar #socialMedia {
   padding-top: 300px;
   list-style-type: none;
+}
+
+.navbar #socialMedia a {
+  padding-bottom: 10px;
 }
 
 body {
