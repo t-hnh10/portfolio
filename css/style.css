@@ -8,7 +8,8 @@
       grid-template-rows: 60px 1fr 60px;
       grid-template-areas: "header" "main" "footer";
   height: 100vh;
-  min-width: 260px;
+  width: 100vw;
+  position: fixed;
 }
 
 .header {
@@ -23,21 +24,12 @@
 }
 
 .navbar {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  /* * Just a quick hamburger */
-  /* * Transform all the slices of hamburger * into a crossmark. */
-  /* * But let's hide the middle one. */
-  /* * Ohyeah and the last one should go the other direction */
-  /* * Make this absolute positioned * at the top left of the screen */
-  /* * And let's slide it in from the left */
 }
 
 .navbar a {
@@ -51,7 +43,7 @@
   color: #efc267;
 }
 
-.navbar #menuToggle {
+#menuToggle {
   display: block;
   position: relative;
   top: 50px;
@@ -65,7 +57,7 @@
        user-select: none;
 }
 
-.navbar #menuToggle input {
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -80,7 +72,8 @@
   -webkit-touch-callout: none;
 }
 
-.navbar #menuToggle span {
+/* * Just a quick hamburger */
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
@@ -97,35 +90,39 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.navbar #menuToggle span:first-child {
+#menuToggle span:first-child {
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
 }
 
-.navbar #menuToggle span:nth-last-child(2) {
+#menuToggle span:nth-last-child(2) {
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
 
-.navbar #menuToggle input:checked ~ span {
+/* * Transform all the slices of hamburger * into a crossmark. */
+#menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
           transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-.navbar #menuToggle input:checked ~ span:nth-last-child(3) {
+/* * But let's hide the middle one. */
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.navbar #menuToggle input:checked ~ span:nth-last-child(2) {
+/* * Ohyeah and the last one should go the other direction */
+#menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-.navbar #menu {
+/* * Make this absolute positioned * at the top left of the screen */
+#menu {
   position: absolute;
   width: calc(100vw - 100px);
   height: calc(100vh - 200px);
@@ -145,23 +142,24 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-.navbar #menu li {
+#menu li {
   padding: 12px 0;
   font-size: 22px;
 }
 
-.navbar #menuToggle input:checked ~ ul {
+/* * And let's slide it in from the left */
+#menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
 }
 
-.navbar #socialMedia {
+#socialMedia {
   list-style-type: none;
   position: absolute;
   bottom: 155px;
 }
 
-.navbar #socialMedia a {
+#socialMedia a {
   padding-right: 18px;
 }
 
