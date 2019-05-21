@@ -30,6 +30,8 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   /* * Just a quick hamburger */
   /* * Transform all the slices of hamburger * into a crossmark. */
   /* * But let's hide the middle one. */
@@ -144,7 +146,7 @@
 }
 
 .navbar #menu li {
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 22px;
 }
 
@@ -156,11 +158,11 @@
 .navbar #socialMedia {
   list-style-type: none;
   position: absolute;
-  bottom: 80px;
+  bottom: 125px;
 }
 
 .navbar #socialMedia a {
-  padding-bottom: 10px;
+  padding-right: 18px;
 }
 
 body {

@@ -1,5 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
+$nav-font-family: 'Open Sans', sans-serif;
+$nav-font-weight: 300;
+
 .container {
   display: grid;
   grid-template-columns: 60px 1fr 60px;
@@ -28,6 +31,8 @@
   grid-area: header;
   display: flex;
   position: relative;
+  font-family: $nav-font-family;
+  font-weight: $nav-font-weight;
   a {
     text-decoration: none;
     color: #F8F8FF;
@@ -111,7 +116,7 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   #menu li {
-    padding: 10px 0;
+    padding: 12px 0;
     font-size: 22px;
   }
   /* * And let's slide it in from the left */
@@ -121,9 +126,9 @@
   #socialMedia {
     list-style-type: none;
     position: absolute;
-    bottom: 80px;
+    bottom: 125px;
     a {
-      padding-bottom: 10px;
+      padding-right: 18px;
     }
   }
 }
