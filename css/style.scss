@@ -5,8 +5,8 @@ $nav-font-weight: 300;
 
 .container {
   display: grid;
-  grid-template-columns: 60px 1fr 60px;
-  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 60px 1fr 60px;
   grid-template-areas:
     "header"
     "main"
@@ -126,7 +126,7 @@ $nav-font-weight: 300;
   #socialMedia {
     list-style-type: none;
     position: absolute;
-    bottom: 125px;
+    bottom: 155px;
     a {
       padding-right: 18px;
     }
@@ -211,13 +211,14 @@ h2 {
 // Footer
 .footer {
   grid-area: footer;
-  position: fixed;
-  left: 0;
+  position: absolute;
+  right: 0;
   bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: blue;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
   text-align: center;
+  opacity: 0.3;
 }
 
 .icons li {
