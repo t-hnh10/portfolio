@@ -154,10 +154,9 @@
 }
 
 .navbar #socialMedia {
-  padding-top: 300px;
   list-style-type: none;
   position: absolute;
-  bottom: 50;
+  bottom: 80px;
 }
 
 .navbar #socialMedia a {
