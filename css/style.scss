@@ -6,7 +6,7 @@ $nav-font-weight: 300;
 .container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 60px 1fr 60px;
+  grid-template-rows: 60px 1fr 64px;
   grid-template-areas:
     "header"
     "main"
@@ -130,6 +130,12 @@ $nav-font-weight: 300;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: #efc267;
+  }
 }
 
 // Background
@@ -210,14 +216,9 @@ h2 {
 // Footer
 .footer {
   grid-area: footer;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 0.3);
   text-align: center;
-  opacity: 0.3;
 }
 
 .icons li {
