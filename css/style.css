@@ -7,6 +7,8 @@
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
       grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+  min-width: 260px;
 }
 
 .header {
@@ -27,6 +29,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   /* * Just a quick hamburger */
   /* * Transform all the slices of hamburger * into a crossmark. */
   /* * But let's hide the middle one. */
@@ -153,6 +156,8 @@
 .navbar #socialMedia {
   padding-top: 300px;
   list-style-type: none;
+  position: absolute;
+  bottom: 50;
 }
 
 .navbar #socialMedia a {
