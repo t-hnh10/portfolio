@@ -193,21 +193,32 @@ body {
 	}
 }
 
-h1 {
-	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 45%;
-	right: 0;
+.selfIntro {
+  grid-area: main;
+  position: absolute;
+  top: 35%;
+  right: 0;
   left: 0;
+  text-align: center;
+  font-family: 'Open Sans';
+  h1 {
+    font-weight: 300;
+    font-size: 50px;
+  }
+  h2 {
+    font-weight: 300;
+  }
+  h3 {
+    margin-bottom: 8px;
+    font-weight: 300;
+  }
+  h4 {
+    margin-top: 0;
+    font-weight: 300;
+  }
 }
 
-h2 {
-  position: relative;
-  font-family: 'Open Sans';
-  font-weight: 300;
-}
+
 
 // Main
 .main {
@@ -219,7 +230,6 @@ h2 {
   grid-area: footer;
   padding: 1rem;
   background-color: rgba(239, 239, 239, 0.3);
-  text-align: center;
 }
 
 .icons li {
