@@ -343,4 +343,15 @@ body {
 #socialMedia a:hover {
   color: #efc267;
 }
+
+@media screen and (min-width: 768px) {
+  #socialMedia {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #socialMedia a {
+    padding: 0 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

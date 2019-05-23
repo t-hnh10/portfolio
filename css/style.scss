@@ -140,4 +140,10 @@ body {
   a:hover {
       color: #efc267;
   }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    a {
+      padding: 0 20px;
+    }
+  }
 }
