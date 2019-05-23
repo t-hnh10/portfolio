@@ -96,15 +96,3 @@
 #menuToggle input:checked ~ ul {
     transform: none;
 }
-#socialMedia {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    a {
-        color: #fff;
-    }
-    a:hover {
-        color: #efc267;
-    }
-}

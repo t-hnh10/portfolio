@@ -31,7 +31,7 @@ $nav-font-weight: 300;
 
 // Background
 body {
-	width: 100wh;
+	width: 100vw;
 	height: 90vh;
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -85,10 +85,10 @@ body {
 
 .selfIntro {
   grid-area: main;
-  position: absolute;
-  top: 30%;
-  right: 0;
-  left: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   font-family: 'Open Sans';
   h1 {
@@ -127,4 +127,17 @@ body {
 .icons li {
   display: inline-flex;
   list-style-type: none;
+}
+
+#socialMedia {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  a {
+      color: #fff;
+  }
+  a:hover {
+      color: #efc267;
+  }
 }
