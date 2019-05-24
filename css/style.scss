@@ -17,6 +17,7 @@ $nav-font-weight: 300;
   height: 100%;
   width: 100vw;
   position: fixed;
+  overflow: auto;
 }
 
 // Header
@@ -118,7 +119,6 @@ body {
   justify-content: center;
   font-family: $nav-font-family;
   font-weight: bold;
-  overflow: auto;
 }
 
 // Footer
