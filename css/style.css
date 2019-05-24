@@ -171,7 +171,7 @@
 #menu {
   position: absolute;
   width: calc(100vw - 100px);
-  height: calc(100vh - 208px);
+  height: calc(100vh - 207px);
   margin: -100px 0 0 -50px;
   padding: 125px 50px;
   background: rgba(5, 102, 141, 0.95);
@@ -226,7 +226,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .imgCard {
@@ -234,7 +236,7 @@
   width: 300px;
   height: 350px;
   background: #fff;
-  margin: 0 auto;
+  margin: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -313,11 +315,37 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px;
-  width: 300px;
+  margin: 0 15px 30px 15px;
+  width: 290px;
   border-radius: 10px;
   background-color: #05668d;
-  padding: 10px 20px;
+  padding: 0 30px 10px 30px;
+}
+
+.textCard:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 320px) {
+  .imgCard {
+    width: 230px;
+    height: 250px;
+  }
+  .textCard {
+    width: 230px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .imgCard {
+    width: 450px;
+    height: 500px;
+  }
+  .textCard {
+    width: 600px;
+  }
 }
 
 .container {

@@ -3,14 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px auto;
+  align-items: center;
 }
 .imgCard{
   position: relative;
   width: 300px;
   height: 350px;
   background: #fff;
-  margin: 0 auto;
+  margin: 30px;
   border-radius: 4px;
   box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
@@ -72,9 +72,35 @@ z-index: 1;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin: 30px;
-  width: 300px;
+  margin: 0 15px 30px 15px;
+  width: 290px;
   border-radius: 10px;
   background-color: #05668d;
-  padding: 10px 20px;
+  padding: 0 30px 10px 30px;
+}
+.textCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+// Media query for iPhone 5
+@media only screen and (max-width: 320px) {
+  .imgCard {
+    width: 230px;
+    height: 250px;
+  }
+  .textCard {
+    width: 230px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+// Media query for tablets and desktops
+@media only screen and (min-width: 768px) {
+  .imgCard {
+    width: 450px;
+    height: 500px;
+  }
+  .textCard {
+    width: 600px;
+  }
 }
