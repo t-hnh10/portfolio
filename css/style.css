@@ -173,7 +173,7 @@
   height: calc(100vh - 200px);
   margin: -100px 0 0 -50px;
   padding: 125px 50px;
-  background: #05668d;
+  background: rgba(5, 102, 141, 0.95);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -187,9 +187,22 @@
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+@media only screen and (min-width: 768px) {
+  #menu {
+    width: 150px;
+    background: rgba(5, 102, 141, 0.9);
+  }
+}
+
 #menu li {
   padding: 12px 0;
   font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu li {
+    padding: 20px 0;
+  }
 }
 
 /* * And let's slide it in from the left */
