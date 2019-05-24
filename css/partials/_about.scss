@@ -96,6 +96,9 @@ z-index: 1;
 
 // Media query for tablets and desktops
 @media only screen and (min-width: 768px) {
+  body p {
+    font-size: 20px;
+  }
   .imgCard {
     width: 450px;
     height: 500px;
