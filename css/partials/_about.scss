@@ -1,9 +1,8 @@
 .box{
   grid-area: main;
-  // display: grid;
-  // align-items: center;
-  // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  // grid-gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px auto;
 }
 .imgCard{
