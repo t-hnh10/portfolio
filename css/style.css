@@ -9,6 +9,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: auto 10% auto 10%;
+  border-radius: 10px;
 }
 
 .card:hover {
@@ -18,7 +19,7 @@
 
 /* Add a background color and some padding around the form */
 .contactContainer {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #05668d;
   padding: 20px;
   /* Style inputs with type="text", select elements and textareas */
@@ -50,7 +51,7 @@
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -191,6 +192,8 @@
   #menu {
     width: 150px;
     background: rgba(5, 102, 141, 0.9);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   }
 }
 
