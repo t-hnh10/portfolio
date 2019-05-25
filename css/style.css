@@ -359,11 +359,13 @@
     font-size: 20px;
   }
   .imgCard {
-    width: 450px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
+    margin: 50px;
   }
   .textCard {
     width: 600px;
+    margin: 30px 15px;
   }
 }
 
