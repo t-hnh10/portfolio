@@ -22,6 +22,7 @@
   border-radius: 10px;
   background-color: #05668d;
   padding: 20px;
+  max-width: 600px;
   /* Style inputs with type="text", select elements and textareas */
   /* Style the submit button with a specific background color etc */
   /* When moving the mouse over the submit button, add a darker green color */
@@ -72,6 +73,15 @@
 @media only screen and (min-width: 768px) {
   .contactContainer {
     width: 600px;
+    padding: 30px;
+  }
+  .contactContainer input[type=text] {
+    padding: 30px 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .contactContainer #subject {
+    margin-top: 15px;
   }
 }
 

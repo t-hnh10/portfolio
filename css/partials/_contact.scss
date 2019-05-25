@@ -17,6 +17,7 @@
     border-radius: 10px;
     background-color: #05668d;
     padding: 20px;
+    max-width: 600px;
     /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
         width: 100%; /* Full width */
@@ -47,14 +48,23 @@
     #subject {
         height: 200px;
     }
-    @media only screen and (max-width: 375px) {
-        #subject {
-        height: 15vh;
-        }
+}
+@media only screen and (max-width: 375px) {
+    .contactContainer #subject {
+    height: 15vh;
     }
 }
 @media only screen and (min-width: 768px) {
     .contactContainer {
         width: 600px;
+        padding: 30px;
+        input[type=text] {
+            padding: 30px 12px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        #subject {
+            margin-top: 15px;
+        }
     }
 }
