@@ -52,6 +52,7 @@ body p {
 
 body li {
   list-style: none;
+  font-weight: 300;
 }
 
 @-webkit-keyframes Gradient {
@@ -128,6 +129,7 @@ body li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   font-family: $nav-font-family;
   font-weight: bold;
 }
