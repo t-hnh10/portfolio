@@ -45,6 +45,14 @@ body {
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
+body p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+body li {
+  list-style: none;
+}
 
 @-webkit-keyframes Gradient {
 	0% {
@@ -153,4 +161,21 @@ body {
       padding: 0 20px;
     }
   }
+}
+
+// table, th, td {
+//   border: 1px solid #efc267;
+//   border-collapse: collapse;
+// }
+th, td {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width:100%;
+  white-space:nowrap;  
+}
+
+#techIcons i {
+    padding: 0 10px;
 }
