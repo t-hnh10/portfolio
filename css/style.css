@@ -379,14 +379,13 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 30px 15px 30px 15px;
-  width: 290px;
+  width: 70vw;
   border-radius: 10px;
   background-color: #05668d;
   padding: 0 30px 10px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 700px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
@@ -401,6 +400,12 @@
 .projectCard img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .projectCard {
+    width: 600px;
+  }
 }
 
 .projectCard:hover {
