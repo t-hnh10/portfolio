@@ -519,6 +519,7 @@ body li {
 .selfIntro h1 {
   font-weight: 300;
   font-size: 50px;
+  margin: 0;
 }
 
 .selfIntro h2 {
