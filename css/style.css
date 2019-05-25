@@ -438,6 +438,15 @@
   z-index: 2;
 }
 
+.pageHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
   width: 100vw;
   height: 90vh;
