@@ -43,6 +43,7 @@ Contact details and social media links are placed in the footer. This was design
 ## Details of planning process including
 Timeline
 ![Timeline](docs/timeline.png "Project timeline")
+
 Trello Board
 ![Trello Board](docs/trello.png "Portfolio Trello Board")
 ## Short Answer Q&A - Include short answers to the following questions,
