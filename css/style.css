@@ -4,7 +4,6 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
-  /* Add shadows to create the "card" effect */
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
@@ -18,33 +17,22 @@
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add a background color and some padding around the form */
 .contactContainer {
   border-radius: 10px;
   background-color: #05668d;
   padding: 20px;
   max-width: 600px;
-  /* Style inputs with type="text", select elements and textareas */
-  /* Style the submit button with a specific background color etc */
-  /* When moving the mouse over the submit button, add a darker green color */
 }
 
 .contactContainer input[type=text], .contactContainer select, .contactContainer textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
   border: 1px solid #ccc;
-  /* Gray border */
   border-radius: 4px;
-  /* Rounded borders */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
   resize: vertical;
 }
 
@@ -58,7 +46,7 @@
 }
 
 .contactContainer input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #efc267;
 }
 
 .contactContainer #subject {
@@ -129,13 +117,10 @@
   left: -5px;
   cursor: pointer;
   opacity: 0;
-  /* hide this */
   z-index: 2;
-  /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
-/* * Just a quick hamburger */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -163,7 +148,6 @@
           transform-origin: 0% 100%;
 }
 
-/* * Transform all the slices of hamburger * into a crossmark. */
 #menuToggle input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(-2px, -1px);
@@ -171,20 +155,17 @@
   background: #232323;
 }
 
-/* * But let's hide the middle one. */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/* * Ohyeah and the last one should go the other direction */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   -webkit-transform: rotate(-45deg) translate(0, -1px);
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-/* * Make this absolute positioned * at the top left of the screen */
 #menu {
   position: absolute;
   width: calc(100vw - 100px);
@@ -194,7 +175,6 @@
   background: rgba(5, 102, 141, 0.95);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
   -webkit-transform: translate(-100%, 0);
@@ -225,7 +205,6 @@
   }
 }
 
-/* * And let's slide it in from the left */
 #menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
@@ -362,10 +341,9 @@
   .imgCard {
     width: 350px;
     height: 400px;
-    margin: 50px;
   }
   .textCard {
-    width: 600px;
+    width: 500px;
     margin: 30px;
   }
 }
@@ -465,16 +443,6 @@ body {
   animation: Gradient 15s ease infinite;
 }
 
-body p {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-}
-
-body li {
-  list-style: none;
-  font-weight: 100;
-}
-
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -557,6 +525,16 @@ body li {
       align-content: center;
   font-family: "Muli", sans-serif;
   font-weight: bold;
+}
+
+body p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+body li {
+  list-style: none;
+  font-weight: 100;
 }
 
 .footer {
