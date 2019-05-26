@@ -46,7 +46,7 @@ Timeline
 
 Trello Board
 ![Trello Board](docs/trello.png "Portfolio Trello Board")
-## Short Answer Q&A - Include short answers to the following questions,
+## Short Answer Q&A
 - Describe key events in the development of the internet from the 1980s to today (max. 150 words)
   - **1982**: Transmission Control Protocol (TCP) and Internet Protocol (IP) emerge as the protocol for ARPANET.
   - **1983**: The Domain Name System (DNS) establishes the familiar system for naming websites.
