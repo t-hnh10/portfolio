@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato|Muli&display=swap");
 .contactCard {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -90,8 +91,8 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
 }
 
 .navbar a {
@@ -444,7 +445,8 @@
   grid-area: header;
   text-align: center;
   margin-top: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -464,13 +466,13 @@ body {
 }
 
 body p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
 body li {
   list-style: none;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 @-webkit-keyframes Gradient {
@@ -513,7 +515,7 @@ body li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: "Muli", sans-serif;
 }
 
 .selfIntro h1 {
@@ -553,7 +555,7 @@ body li {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   font-weight: bold;
 }
 
