@@ -397,8 +397,8 @@
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 60px 1fr 64px;
-      grid-template-rows: 60px 1fr 64px;
+  -ms-grid-rows: 60px 1fr 75px;
+      grid-template-rows: 60px 1fr 75px;
       grid-template-areas: "header" "main" "footer";
   height: 100%;
   width: 100vw;
@@ -537,6 +537,41 @@ body li {
   font-weight: 100;
 }
 
+.copyrightCard {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 30px 15px 30px 15px;
+  width: 290px;
+  border-radius: 10px;
+  background-color: #05668d;
+  padding: 10px 30px 10px 30px;
+}
+
+.copyrightCard:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 320px) {
+  .copyrightCard {
+    width: 230px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .copyrightCard {
+    width: 500px;
+    margin: 30px;
+  }
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -585,5 +620,21 @@ body li {
 
 #techIcons i {
   padding: 0 10px;
+}
+
+#copyright {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  text-align: center;
+  padding: 6px;
+  font-size: smaller;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
